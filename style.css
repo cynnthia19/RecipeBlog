@@ -83,7 +83,100 @@
 .btn-recipe:hover {
     background-color:rgb(130,174,70);
 }
+* Texte du carousel */
+.carousel-caption {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 10;
+    color: white;
+}
+
+/* Catégorie du plat */
+.recipe-category {
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+/* Titre de la recette */
+.carousel-caption h2 {
+    font-size: 3rem; /* Taille par défaut */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Description de la recette */
+.recipe-description {
+    font-size: 1.2rem; /* Taille par défaut */
+    margin-bottom: 20px;
+}
+
+/* Bouton */
+.btn-recipe {
+    font-size: 1rem;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #333;
+    text-transform: uppercase;
+    border-radius: 30px;
+}
+
+/* Rendre les textes responsives */
+@media (max-width: 1200px) {
+    .carousel-caption h2 {
+        font-size: 2.5rem; /* Plus petit sur des écrans plus petits */
+    }
+
+    .recipe-description {
+        font-size: 1.1rem; /* Plus petit sur des écrans plus petits */
+    }
+}
+
+@media (max-width: 992px) {
+    .carousel-caption h2 {
+        font-size: 2rem; /* Taille encore plus petite */
+    }
+
+    .recipe-description {
+        font-size: 1rem;
+    }
+
+    .btn-recipe {
+        font-size: 0.9rem; /* Bouton plus petit */
+    }
+}
+
 @media (max-width: 768px) {
+    .carousel-caption h2 {
+        font-size: 1.8rem; /* Plus petit sur les petits écrans */
+    }
+
+    .recipe-description {
+        font-size: 0.9rem;
+    }
+
+    .btn-recipe {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-caption h2 {
+        font-size: 1.5rem; /* Taille encore réduite */
+    }
+
+    .recipe-description {
+        font-size: 0.8rem;
+    }
+
+    .btn-recipe {
+        font-size: 0.7rem;
+    }
     .recipe-carousel .carousel-item {
         height: 300px;
     }
