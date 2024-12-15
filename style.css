@@ -163,6 +163,14 @@
     .btn-recipe {
         font-size: 0.8rem;
     }
+    .recipe-carousel .carousel-item {
+        height: 300px;
+    }
+
+    .recipe-carousel .carousel-caption {
+        bottom: 10%;
+        font-size: 0.9rem;
+    }
 }
 
 @media (max-width: 576px) {
@@ -177,15 +185,8 @@
     .btn-recipe {
         font-size: 0.7rem;
     }
-    .recipe-carousel .carousel-item {
-        height: 300px;
-    }
-
-    .recipe-carousel .carousel-caption {
-        bottom: 10%;
-        font-size: 0.9rem;
-    }
 }
+
 
 /* Section À propos */
 #a-propos {
