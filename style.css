@@ -170,16 +170,22 @@
         height: 300px;
     }
 
-    .recipe-carousel .carousel-caption {
-        bottom: 10%;
-        font-size: 0.9rem;
-        width: 100%;
+    .carousel-caption h2, 
+    .carousel-caption p {
+        width: 100%; /* Étendre sur toute la largeur */
+        text-align: center; /* Centrer le texte */
+        margin: 0; /* Retirer les marges */
+        padding: 0 10px; /* Ajouter un peu d'espacement pour la lisibilité */
+        box-sizing: border-box;
     }
 }
 
 @media (max-width: 576px) {
-    .carousel-caption h2 {
-        font-size: 1.5rem; /* Taille encore réduite */
+    .carousel-caption h2, 
+    .carousel-caption p {
+        width: 100%; /* Prend toute la largeur */
+        padding: 0 5px; /* Ajuste les marges internes */
+        font-size: smaller; /* Réduit légèrement la taille si nécessaire */
     }
 
     .recipe-description {
