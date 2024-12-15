@@ -149,6 +149,9 @@
     .btn-recipe {
         font-size: 0.9rem; /* Bouton plus petit */
     }
+    .carousel-caption{
+        width: 100%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -170,6 +173,7 @@
     .recipe-carousel .carousel-caption {
         bottom: 10%;
         font-size: 0.9rem;
+        width: 100%;
     }
 }
 
