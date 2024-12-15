@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recettes|Desserts</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="logo.png" alt="Logo" class="img-fluid" style="height: auto; width: 180px;">
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class="bi bi-house-door me-1"></i>Accueil</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            <i class="bi bi-egg-fried me-1"></i>Recettes
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="plats.html"><i class="bi bi-cup-hot me-2"></i>Plats</a></li>
+                            <li><a class="dropdown-item" href="boissons.html"><i class="bi bi-pie-chart me-2"></i>Boissons</a></li>
+                            <li><a class="dropdown-item" href="desserts.html"><i class="bi bi-cake2 me-2"></i>Desserts</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html"><i class="bi bi-info-circle me-1"></i>À propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html"><i class="bi bi-envelope me-1"></i>Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section de la recette -->
+    <section id="recette" class="container my-5">
+        <div class="row">
+            <div class="col-12 text-center">
+                <img src="https://loopnewslive.blob.core.windows.net/liveimage/sites/default/files/8e338821abda296e95fb1aad8312a15dwhatsapp_image_2022-06-17_at_1.17.51_pm.jpeg" alt="Gâteau au Beurre" class="img-fluid rounded shadow-lg mb-4"
+                    style="max-width: 600px;">
+                <h2 class="fw-bold text-primary">Gâteau au Beurre</h2>
+                <p class="text-muted"><strong>Temps de préparation:</strong> 45 minutes | 
+                   <strong>Temps de cuisson:</strong> 30 minutes | 
+                   <strong>Personnes:</strong> 8 | 
+                   <strong>Catégorie:</strong> Dessert</p>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="card border-0 shadow-sm bg-light p-4">
+                    <h4 class="fw-bold text-success mb-3 text-center">Ingrédients</h4>
+                    <ul class="list-unstyled d-flex flex-wrap justify-content-between">
+                        <li class="mb-3 col-sm-6"><i class="bi bi-check-circle-fill text-success me-2"></i>200g de beurre doux</li>
+                        <li class="mb-3 col-sm-6"><i class="bi bi-check-circle-fill text-success me-2"></i>200g de sucre</li>
+                        <li class="mb-3 col-sm-6"><i class="bi bi-check-circle-fill text-success me-2"></i>4 œufs</li>
+                        <li class="mb-3 col-sm-6"><i class="bi bi-check-circle-fill text-success me-2"></i>200g de farine</li>
+                        <li class="mb-3 col-sm-6"><i class="bi bi-check-circle-fill text-success me-2"></i>1 sachet de levure chimique</li>
+                        <li class="mb-3 col-sm-6"><i class="bi bi-check-circle-fill text-success me-2"></i>1 pincée de sel</li>
+                        <li class="mb-3 col-sm-6"><i class="bi bi-check-circle-fill text-success me-2"></i>1 cuillère à soupe d’extrait de vanille</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-12">
+                <h3 class="fw-bold text-success text-center mb-4" id="etapes">Étapes de préparation</h3>
+                <ol class="list-group list-group-numbered">
+                    <li class="list-group-item border-0 py-2">Préchauffez le four à 180°C (th.6).</li>
+                    <li class="list-group-item border-0 py-2">Dans un bol, mélangez le beurre ramolli et le sucre jusqu'à obtenir une texture crémeuse.</li>
+                    <li class="list-group-item border-0 py-2">Ajoutez les œufs un par un, en mélangeant bien après chaque ajout.</li>
+                    <li class="list-group-item border-0 py-2">Incorporez la farine tamisée, la levure chimique et la pincée de sel progressivement.</li>
+                    <li class="list-group-item border-0 py-2">Ajoutez l'extrait de vanille pour parfumer la pâte.</li>
+                    <li class="list-group-item border-0 py-2">Versez la pâte dans un moule beurré et fariné.</li>
+                    <li class="list-group-item border-0 py-2">Enfournez pendant 30 minutes, ou jusqu’à ce qu’un couteau inséré au centre ressorte propre.</li>
+                    <li class="list-group-item border-0 py-2">Laissez refroidir avant de démouler et servir.</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

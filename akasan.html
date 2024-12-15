@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recettes|Boissons</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--link css-->
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm sticky-top">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+                <img src="logo.png" alt="Logo" class="img-fluid" style="height: auto; width: 180px;">
+            </a>
+
+            <!-- Burger Menu -->
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu Items -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <i class="bi bi-house-door me-1"></i>Accueil
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            <i class="bi bi-egg-fried me-1"></i>Recettes
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="plats.html"><i class="bi bi-cup-hot me-2"></i>Plats</a>
+                            </li>
+                            <li><a class="dropdown-item" href="boissons.html"><i
+                                        class="bi bi-pie-chart me-2"></i>Boissons</a></li>
+                            <li><a class="dropdown-item" href="desserts.html"><i
+                                        class="bi bi-cake2 me-2"></i>Desserts</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">
+                            <i class="bi bi-info-circle me-1"></i>À propos
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">
+                            <i class="bi bi-envelope me-1"></i>Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!-- Section de la recette -->
+<section id="recette" class="container my-5">
+    <div class="row">
+        <!-- Image et titre -->
+        <div class="col-12 text-center">
+            <img src="https://loopnewslive.blob.core.windows.net/liveimage/sites/default/files/2021-09/d731d2d3e991b6a72aa5291beda46762e2d99838-e99b-4b67-8292-966d5484dfd4.jpeg" 
+                 alt="Akasan" class="img-fluid rounded shadow-lg mb-4" style="max-width: 600px;">
+            <h2 class="fw-bold text-primary">Akasan</h2>
+            <p class="text-muted"><strong>Temps de préparation:</strong> 30 minutes | 
+               <strong>Personnes:</strong> 4 | 
+               <strong>Catégorie:</strong> Boisson</p>
+        </div>
+    </div>
+
+    <!-- Liste des ingrédients -->
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="card border-0 shadow-sm bg-light p-4">
+                <h4 class="fw-bold text-success mb-3 text-center">Ingrédients</h4>
+                <ul class="list-unstyled d-flex flex-wrap justify-content-between">
+                    <li class="mb-3 col-sm-6"><i class="bi bi-check-circle-fill text-success me-2"></i>Maïs sec (500 g)</li>
+                    <li class="mb-3 col-sm-6"><i class="bi bi-check-circle-fill text-success me-2"></i>Lait condensé sucré (1 boîte)</li>
+                    <li class="mb-3 col-sm-6"><i class="bi bi-check-circle-fill text-success me-2"></i>Sucre (au goût)</li>
+                    <li class="mb-3 col-sm-6"><i class="bi bi-check-circle-fill text-success me-2"></i>Extrait de vanille (1 cuillère à café)</li>
+                    <li class="mb-3 col-sm-6"><i class="bi bi-check-circle-fill text-success me-2"></i>Cannelle en poudre (1 cuillère à soupe)</li>
+                    <li class="mb-3 col-sm-6"><i class="bi bi-check-circle-fill text-success me-2"></i>Eau (1,5 L)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Étapes de préparation -->
+    <div class="row mt-5">
+        <div class="col-12">
+            <h3 class="fw-bold text-success text-center mb-4" id="etapes">Étapes de préparation</h3>
+            <ol class="list-group list-group-numbered">
+                <li class="list-group-item border-0 py-2">Faites bouillir le maïs dans 1,5 L d'eau pendant environ 30 minutes jusqu'à ce qu'il soit bien cuit et tendre.</li>
+                <li class="list-group-item border-0 py-2">Égouttez le maïs et laissez-le refroidir avant de le mixer avec de l'eau propre jusqu'à obtenir une texture lisse.</li>
+                <li class="list-group-item border-0 py-2">Dans un grand bol, ajoutez le lait condensé sucré, le sucre, la vanille et la cannelle au mélange de maïs.</li>
+                <li class="list-group-item border-0 py-2">Bien mélanger jusqu'à ce que le sucre soit dissous et que la boisson ait une texture crémeuse.</li>
+                <li class="list-group-item border-0 py-2">Réfrigérez pendant au moins une heure avant de servir.</li>
+                <li class="list-group-item border-0 py-2">Servez frais, et dégustez cette boisson rafraîchissante et sucrée.</li>
+            </ol>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kwizin Ayisyen</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--link css-->
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm sticky-top">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+                <img src="logo.png" alt="Logo" class="img-fluid" style="height: auto; width: 180px;">
+            </a>
+
+            <!-- Burger Menu -->
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu Items -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="bi bi-house-door me-1"></i>Accueil
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            <i class="bi bi-egg-fried me-1"></i>Recettes
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="plats.html"><i class="bi bi-cup-hot me-2"></i>Plats</a></li>
+                            <li><a class="dropdown-item" href="boissons.html"><i class="bi bi-pie-chart me-2"></i>Boissons</a></li>
+                            <li><a class="dropdown-item" href="desserts.html"><i class="bi bi-cake2 me-2"></i>Desserts</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">
+                            <i class="bi bi-info-circle me-1"></i>À propos
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">
+                            <i class="bi bi-envelope me-1"></i>Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="recipe-carousel">
+        <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="overlay"></div>
+                    <img src="https://preview.colorlib.com/theme/vegefoods/images/bg_2.jpg"
+                        class="d-block w-100 img-fluid" alt="Légumes frais">
+                    <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
+                        <span class="recipe-category">TENDANCE</span>
+                        <h2 class="text-white">Buddha Bowl Végétarien</h2>
+                        <p class="recipe-description">Équilibré et gourmand</p>
+                        <a href="#" class="btn btn-recipe btn-lg">
+                            <i class="bi bi-arrow-right-circle me-2"></i>Voir la recette
+                        </a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="overlay"></div>
+                    <img src="https://preview.colorlib.com/theme/vegefoods/images/bg_1.jpg"
+                        class="d-block w-100 img-fluid" alt="Salade fraîche">
+                    <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
+                        <span class="recipe-category">RECETTE DU JOUR</span>
+                        <h2 class="text-white">Salade Méditerranéenne</h2>
+                        <p class="recipe-description">Une explosion de saveurs fraîches et colorées</p>
+                        <a href="#" class="btn btn-recipe btn-lg">
+                            <i class="bi bi-arrow-right-circle me-2"></i>Voir la recette
+                        </a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="overlay"></div>
+                    <img src="https://images.unsplash.com/photo-1653233797467-1a528819fd4f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGN1aXNpbmVyfGVufDB8fDB8fHww"
+                        class="d-block w-100 img-fluid" alt="Soupe maison">
+                    <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
+                        <span class="recipe-category">POPULAIRE</span>
+                        <h2 class="text-white">Pâté Kòde</h2>
+                        <p class="recipe-description">Réconfortant et onctueux</p>
+                        <a href="#" class="btn btn-recipe btn-lg">
+                            <i class="bi bi-arrow-right-circle me-2"></i>Voir la recette
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section À propos -->
+    <section id="a-propos" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Texte À propos -->
+                <div class="col-lg-6">
+                    <h2 class="fw-bold mb-4">À propos de <span class="text-success">Kwizin Ayisyen</span></h2>
+                    <p class="mb-3">
+                        <strong>Kwizin Ayisyen</strong>, votre destination en ligne pour découvrir,
+                        apprendre et savourer les délicieuses recettes traditionnelles d’Haïti.
+                        Ce blog a été créé avec amour pour partager la richesse culinaire de notre culture et
+                        transmettre nos saveurs uniques au monde entier.
+                    </p>
+                    <p class="mb-4">
+                        Que vous soyez un passionné de cuisine, un curieux ou simplement quelqu'un qui souhaite
+                        retrouver les goûts de la maison, vous êtes au bon endroit.
+                        Explorez nos recettes, apprenez les techniques authentiques, et laissez-vous inspirer par
+                        l'histoire et les traditions derrière chaque plat.
+                    </p>
+                    <a href="#recettes" class="btn btn-success btn-lg">Découvrir nos recettes</a>
+                </div>
+                <!-- Image À propos -->
+                <div class="col-lg-6">
+                    <img src="https://cdn.pixabay.com/photo/2018/10/25/19/15/goulash-3773134_640.jpg" alt="Cuisine haïtienne" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Nos Recettes -->
+<section id="nos-recettes" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="fw-bold text-center mb-5">Nos <span class="text-success">Recettes</span></h2>
+
+        <!-- Tabs Navigation -->
+        <ul class="nav nav-tabs justify-content-center border-0" id="recettesTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="nav-link active px-4 py-3" id="plats-tab" data-bs-toggle="tab" href="#plats" role="tab"
+                    aria-controls="plats" aria-selected="true">
+                    <i class="bi bi-cup-hot me-2"></i>Plats
+                </a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link px-4 py-3" id="boissons-tab" data-bs-toggle="tab" href="#boissons" role="tab"
+                    aria-controls="boissons" aria-selected="false">
+                    <i class="bi bi-pie-chart me-2"></i>Boissons
+                </a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link px-4 py-3" id="desserts-tab" data-bs-toggle="tab" href="#desserts" role="tab"
+                    aria-controls="desserts" aria-selected="false">
+                    <i class="bi bi-cake2 me-2"></i>Desserts
+                </a>
+            </li>
+        </ul>
+
+        <!-- Tabs Content -->
+        <div class="tab-content mt-4" id="recettesTabContent">
+            <!-- Plats Tab -->
+            <div class="tab-pane fade show active" id="plats" role="tabpanel" aria-labelledby="plats-tab">
+                <div class="row">
+                    <div class="col-lg-4 mb-4">
+                        <img src="https://haitiwonderland.com/assets/images/upload/blog/haiti_13-lalo_1700867334.jpg" alt="Lalo" class="img-fluid rounded shadow">
+                        <h5 class="mt-3">Lalo</h5>
+                        <p>Un ragoût savoureux préparé avec des feuilles de lalo, du riz et souvent accompagné de viande ou de crabe.</p>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <img src="https://haitiwonderland.com/assets/images/upload/blog/haiti_2-pate-kode_1700851249.jpg" alt="Pâté Kòde" class="img-fluid rounded shadow">
+                        <h5 class="mt-3">Pâté Kòde</h5>
+                        <p>Un en-cas populaire composé d'une pâte frite garnie de viande, de légumes ou de morue.</p>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <img src="https://haitiwonderland.com/assets/images/upload/blog/haiti_3-soup-joumou_1700851339.jpg" alt="Soup Joumou" class="img-fluid rounded shadow">
+                        <h5 class="mt-3">Soup Joumou</h5>
+                        <p>La soupe symbolique d'Haïti, préparée avec du giraumon, des légumes, de la viande et des pâtes.</p>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- Boissons Tab -->
+            <div class="tab-pane fade" id="boissons" role="tabpanel" aria-labelledby="boissons-tab">
+                <div class="row">
+                    <div class="col-lg-4 mb-4">
+                        <img src="https://azmartinique.com/sites/azmartinique.com/files/styles/image_originale/public/fruits/corossol.jpg?itok=20bIox4l" alt="Boisson 1" class="img-fluid rounded shadow">
+                        <h5 class="mt-3">Jus de Corossol</h5>
+                        <p>Un jus frais et crémeux fait à base de corossol.</p>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <img src="https://loopnewslive.blob.core.windows.net/liveimage/sites/default/files/2021-09/d731d2d3e991b6a72aa5291beda46762e2d99838-e99b-4b67-8292-966d5484dfd4.jpeg" alt="Boisson 2" class="img-fluid rounded shadow">
+                        <h5 class="mt-3">Akasan</h5>
+                        <p>Une boisson sucrée et crémeuse à base de maïs et de lait.</p>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <img src="https://assets.afcdn.com/story/20230823/2226903_w4366h3274c1cx2183cy1496cxt0cyt0cxb4366cyb2991.jpg" alt="Boisson 3" class="img-fluid rounded shadow">
+                        <h5 class="mt-3">Jus de Citron</h5>
+                        <p>Un classique rafraîchissant aux saveurs tropicales.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Desserts Tab -->
+            <div class="tab-pane fade" id="desserts" role="tabpanel" aria-labelledby="desserts-tab">
+                <div class="row">
+                    <div class="col-lg-4 mb-4">
+                        <img src="https://haitiwonderland.com/assets/images/upload/blog/haiti_18-pen-patat_1700867884.jpg" alt="Dessert 1" class="img-fluid rounded shadow">
+                        <h5 class="mt-3">Pain Patate</h5>
+                        <p>Un dessert sucré et fondant à base de patates douces.</p>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <img src="https://loopnewslive.blob.core.windows.net/liveimage/sites/default/files/8e338821abda296e95fb1aad8312a15dwhatsapp_image_2022-06-17_at_1.17.51_pm.jpeg" alt="Dessert 2" class="img-fluid rounded shadow">
+                        <h5 class="mt-3">Gateau au beurre</h5>
+                        <p>un dessert traditionnel d’Haïti qui a beaucoup de goût</p>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <img src="https://loopnewslive.blob.core.windows.net/liveimage/sites/default/files/e7bb65fd256c0d2da13305a84426174ewhatsapp_image_2022-06-17_at_12.53.12_pm.jpeg" alt="Dessert 3" class="img-fluid rounded shadow">
+                        <h5 class="mt-3">Bonbon Sirop</h5>
+                        <p> un charmant dessert à base de farine, du sirop de canne à sucre noir</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal Lalo -->
+<div class="modal fade" id="laloModal" tabindex="-1" role="dialog" aria-labelledby="laloModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="laloModalLabel">Lalo</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Un ragoût savoureux préparé avec des feuilles de lalo, du riz et souvent accompagné de viande ou de crabe. Ce plat est un incontournable de la cuisine haïtienne.</p>
+                <a href="#" class="btn btn-primary">Voir plus</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-dark text-light py-5">
+    <div class="container">
+        <div class="row">
+            <!-- Première colonne : Logo et description -->
+            <div class="col-lg-4 mb-4">
+                <img src="logo.png" alt="Logo" class="img-fluid mb-3" style="width: 150px;">
+                <p>Découvrez les saveurs uniques de la cuisine haïtienne à travers nos recettes authentiques et faciles à préparer.</p>
+            </div>
+
+            <!-- Deuxième colonne : Menus -->
+            <div class="col-lg-4 mb-4">
+                <h5 class="fw-bold text-uppercase">Menu</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-light text-decoration-none">Accueil</a></li>
+                    <li><a href="#a-propos" class="text-light text-decoration-none">À propos</a></li>
+                    <li><a href="#nos-recettes" class="text-light text-decoration-none">Nos Recettes</a></li>
+                    <li><a href="#contact" class="text-light text-decoration-none">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Troisième colonne : Newsletter et Réseaux sociaux -->
+            <div class="col-lg-4">
+                <!-- Formulaire Newsletter -->
+                <h5 class="fw-bold text-uppercase">Abonnez-vous</h5>
+                <form class="mb-3">
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Votre email" aria-label="Votre email">
+                        <button class="btn btn-success" type="submit">S'abonner</button>
+                    </div>
+                </form>
+
+                <!-- Réseaux sociaux et email -->
+                <h5 class="fw-bold text-uppercase">Suivez-nous</h5>
+                <div class="d-flex align-items-center gap-3">
+                    <a href="#" class="text-light"><i class="bi bi-facebook fs-4"></i></a>
+                    <a href="#" class="text-light"><i class="bi bi-instagram fs-4"></i></a>
+                    <a href="#" class="text-light"><i class="bi bi-twitter fs-4"></i></a>
+                    <a href="mailto:info@votresite.com" class="text-light"><i class="bi bi-envelope fs-4"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="text-center mt-4">
+            <p class="mb-0">© 2024 kwizinAyisyen. Tous droits réservés.</p>
+        </div>
+    </div>
+</footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

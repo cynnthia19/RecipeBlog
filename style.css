@@ -1,0 +1,351 @@
+*{
+    margin: 0;
+    padding: 0; 
+}
+.navbar {
+    background-color: rgba(255, 255, 255, 0.98);
+    padding: 1rem 0;
+}
+.nav-link {
+    font-size: 1.1rem;
+    color: #333 !important;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease;
+    padding: 0.5rem 1rem !important;
+}
+.nav-link:hover {
+    color: #e67e22 !important;
+}
+.dropdown-menu {
+    border: none;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+.dropdown-item {
+    padding: 0.7rem 1.5rem;
+    transition: all 0.3s ease;
+}
+.dropdown-item:hover {
+    background-color: #fff3e6;
+    color: #e67e22;
+}
+/* Style responsive */
+@media (max-width: 768px) {
+    .navbar-nav {
+        padding: 1rem 0;
+    }
+    
+    .dropdown-item {
+        padding: 0.7rem 1.5rem;
+    }
+}
+/*---carousel----*/
+.recipe-carousel .carousel-item {
+    position: relative;
+    height: 547px; /* Hauteur des éléments du carrousel */
+    background-color: #333;
+}
+.recipe-carousel .carousel-caption {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    z-index: 2;
+    padding: 20px;
+}
+.recipe-category {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.recipe-description {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); 
+    z-index: 1;
+}
+.btn-recipe {
+    background-color: rgb(130,174,70);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+.btn-recipe:hover {
+    background-color:rgb(130,174,70);
+}
+@media (max-width: 768px) {
+    .recipe-carousel .carousel-item {
+        height: 300px;
+    }
+
+    .recipe-carousel .carousel-caption {
+        bottom: 10%;
+        font-size: 0.9rem;
+    }
+}
+
+/* Section À propos */
+#a-propos {
+    background-color: #f9f9f9; /* Couleur de fond légère */
+    padding: 60px 0;
+}
+#a-propos h2 {
+    font-size: 36px;
+    color: #333;
+}
+.text-success{
+    color: rgb(130,174,70) !important;
+}
+#a-propos p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+}
+#a-propos img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#a-propos .btn-success {
+    font-size: 16px;
+    padding: 12px 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: rgb(130,174,70);
+    border:none;
+}
+/*-----section recettes*/
+.nav-tabs .nav-link {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #555;
+    border: none;
+    margin: 0 10px;
+    border-radius: 30px;
+    background-color: #f1f1f1;
+    transition: all 0.3s ease;
+}
+
+.nav-tabs .nav-link.active {
+    color: #fff;
+    background-color: rgb(130,174,70);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nav-tabs .nav-link:hover {
+    color: rgb(130,174,70);
+    background-color: #e9f5eb;
+}
+
+/* Remove tab bottom border */
+.nav-tabs {
+    border-bottom: none;
+}
+.tab-content .img-fluid {
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+.tab-content .img-fluid:hover {
+    transform: scale(1.05);
+}
+/*---section footer----*/
+footer {
+    background-color: #222;
+    color: #ccc;
+    font-size: 14px;
+}
+footer a {
+    color: #aaa;
+    transition: color 0.3s;
+}
+footer a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+footer .form-control {
+    border: none;
+    border-radius: 0;
+    color: #fff;
+}
+footer .form-control:focus {
+    background-color: #444;
+    box-shadow: none;
+}
+footer .btn-success {
+    background-color: rgb(130,174,70);
+    border: none;
+    border-radius: 0;
+}
+footer .btn-success:hover {
+    background-color: #218838;
+}
+footer i {
+    transition: color 0.3s;
+}
+footer i:hover {
+    color: rgb(130,174,70);
+}
+
+/*-----------page about--------*/
+.hero {
+    position: relative;
+    height: 350px; /* Ajustez la hauteur selon vos préférences */
+}
+.banner-image {
+    object-fit: cover; /* Assure que l'image couvre toute la section sans déformation */
+    height: 100%;
+}
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Légère superposition sombre pour améliorer la lisibilité */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+.hero-overlay h2 {
+    font-size: 3rem; /* Taille du texte sur grands écrans */
+}
+.hero-overlay p {
+    font-size: 1.2rem; /* Taille du texte pour une meilleure lisibilité */
+    margin-top: 15px;
+}
+/* Responsivité pour mobile */
+@media (max-width: 768px) {
+    .hero-overlay h2 {
+        font-size: 2rem;
+    }
+    .hero-overlay p {
+        font-size: 1rem;
+    }
+}
+
+/*--------------contact----------------*/
+.contact-form {
+    background-color: #f4f7fa;
+    padding: 40px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+.contact-form input, .contact-form textarea {
+    font-size: 1.1rem;
+}
+.contact-form .form-control-lg {
+    border-color: #ddd;
+}
+.contact-form button {
+    background-color: rgb(130,174,70);
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+.contact-form button:hover {
+    background-color: rgb(130,174,70);
+}
+.form-group label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #495057;
+}
+.contact-container {
+    margin-top: 50px;
+}
+
+/* Animation au focus */
+.form-control:focus {
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+    border-color: rgb(130,174,70);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .contact-form {
+        padding: 30px;
+    }
+}
+
+/*------------Plats---------*/
+.card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+.card-img-top {
+    object-fit: cover;
+    height: 200px; /* Ajustez la taille de l'image selon vos préférences */
+}
+.card-body {
+    background-color: #f9f9f9;
+}
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+.card-text {
+    font-size: 1rem;
+    color: #555;
+}
+.btn-success {
+    background-color: rgb(130,174,70);
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+.btn-success:hover {
+    background-color: rgb(130,174,70);
+}
+.container {
+    max-width: 1000px;
+}
+#recette img.img-fluid {
+    border: 8px solid #f8f9fa;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+.card {
+    border-radius: 10px;
+    background: linear-gradient(to bottom, #ffffff, #f9f9f9);
+}
+.bi-check-circle-fill {
+    font-size: 1.2rem;
+    vertical-align: middle;
+}
+ul.list-unstyled li {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+ol.list-group-numbered .list-group-item {
+    background: none;
+    font-size: 1.1rem;
+    border: none;
+    line-height: 1.8;
+}
+

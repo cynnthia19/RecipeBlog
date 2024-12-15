@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recettes|Plats</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--link css-->
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm sticky-top">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+                <img src="logo.png" alt="Logo" class="img-fluid" style="height: auto; width: 180px;">
+            </a>
+
+            <!-- Burger Menu -->
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu Items -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <i class="bi bi-house-door me-1"></i>Accueil
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            <i class="bi bi-egg-fried me-1"></i>Recettes
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="plats.html"><i class="bi bi-cup-hot me-2"></i>Plats</a>
+                            </li>
+                            <li><a class="dropdown-item" href="boissons.html"><i
+                                        class="bi bi-pie-chart me-2"></i>Boissons</a></li>
+                            <li><a class="dropdown-item" href="desserts.html"><i
+                                        class="bi bi-cake2 me-2"></i>Desserts</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">
+                            <i class="bi bi-info-circle me-1"></i>À propos
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">
+                            <i class="bi bi-envelope me-1"></i>Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!-- Section de la recette -->
+<section id="recette" class="container my-5">
+    <div class="row">
+        <!-- Image et titre -->
+        <div class="col-12 text-center">
+            <img src="https://haitiwonderland.com/assets/images/upload/blog/haiti_3-soup-joumou_1700851339.jpg" 
+                 alt="Soupe Joumou" class="img-fluid rounded shadow-lg mb-4" style="max-width: 600px;">
+            <h2 class="fw-bold text-primary">Soupe Joumou</h2>
+            <p class="text-muted"><strong>Temps de préparation:</strong> 2 heures | 
+               <strong>Personnes:</strong> 8 | 
+               <strong>Catégorie:</strong> Plat traditionnel</p>
+        </div>
+    </div>
+
+    <!-- Liste des ingrédients -->
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="card border-0 shadow-sm bg-light p-4">
+                <h4 class="fw-bold text-success mb-3 text-center">Ingrédients</h4>
+                <ul class="list-unstyled d-flex flex-wrap justify-content-between">
+                    <li class="mb-3 col-sm-6"><i class="bi bi-check-circle-fill text-success me-2"></i>Giraumon (1 kg)</li>
+                    <li class="mb-3 col-sm-6"><i class="bi bi-check-circle-fill text-success me-2"></i>Pommes de terre (3 moyennes)</li>
+                    <li class="mb-3 col-sm-6"><i class="bi bi-check-circle-fill text-success me-2"></i>Pâtes (macaroni ou spaghetti, 200 g)</li>
+                    <li class="mb-3 col-sm-6"><i class="bi bi-check-circle-fill text-success me-2"></i>Chou vert (1/2, coupé en lanières)</li>
+                    <li class="mb-3 col-sm-6"><i class="bi bi-check-circle-fill text-success me-2"></i>Carottes (2, coupées en rondelles)</li>
+                    <li class="mb-3 col-sm-6"><i class="bi bi-check-circle-fill text-success me-2"></i>Viande (bœuf ou poulet, 500 g)</li>
+                    <li class="mb-3 col-sm-6"><i class="bi bi-check-circle-fill text-success me-2"></i>Lait de cuisson ou bouillon de viande (2 L)</li>
+                    <li class="mb-3 col-sm-6"><i class="bi bi-check-circle-fill text-success me-2"></i>Sel, poivre, épices haïtiennes</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Étapes de préparation -->
+    <div class="row mt-5">
+        <div class="col-12">
+            <h3 class="fw-bold text-success text-center mb-4" id="etapes">Étapes de préparation</h3>
+            <ol class="list-group list-group-numbered">
+                <li class="list-group-item border-0 py-2">Épluchez le giraumon, coupez-le en morceaux et faites-le cuire dans de l'eau bouillante jusqu'à ce qu'il soit tendre. Égouttez et mixez pour obtenir une purée.</li>
+                <li class="list-group-item border-0 py-2">Dans une grande marmite, faites revenir la viande avec un peu d'huile, des oignons et des épices jusqu'à ce qu'elle soit bien dorée.</li>
+                <li class="list-group-item border-0 py-2">Ajoutez la purée de giraumon à la viande, puis incorporez le bouillon de viande ou de lait de cuisson. Portez à ébullition.</li>
+                <li class="list-group-item border-0 py-2">Ajoutez les pommes de terre, les carottes, le chou et les pâtes. Laissez mijoter à feu moyen pendant 30 à 40 minutes, en remuant de temps en temps.</li>
+                <li class="list-group-item border-0 py-2">Goûtez et ajustez l'assaisonnement avec du sel, du poivre et des épices. Servez chaud avec du pain ou du riz en accompagnement.</li>
+            </ol>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
